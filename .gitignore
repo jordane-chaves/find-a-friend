@@ -1,9 +1,10 @@
 # Dependencies
 node_modules
 
-# Build
+# Folders
 build
 dist
+coverage
 
 # Environment
 .env
