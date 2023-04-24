@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node build/shared/infra/http/server.js",
     "start:dev": "tsx watch src/shared/infra/http/server.ts",
+    "build": "tsup src --out-dir build",
     "test:create-prisma-environment": "npm link ./prisma/vitest-environment-prisma",
     "test:install-prisma-environment": "npm link vitest-environment-prisma",
     "test": "vitest run --dir src/application",
@@ -44,6 +46,7 @@
     "prettier": "2.8.7",
     "prisma": "4.13.0",
     "supertest": "6.3.3",
+    "tsup": "6.7.0",
     "tsx": "3.12.6",
     "typescript": "5.0.4",
     "vite-tsconfig-paths": "4.2.0",
